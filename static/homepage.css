@@ -1,0 +1,22 @@
+.introduction {
+    position: relative;
+    clear: both;
+    display: block;
+    text-align: center;
+    height: 600px;
+}
+.topArea {
+    position: relative;
+    display: block;
+    height: 600px
+}
+
+.titleArea {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    padding: 0%;
+    margin-bottom: 0%;
+    border-bottom: none;
+    background-position: 50% 50%;
+}
