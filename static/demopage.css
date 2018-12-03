@@ -1,12 +1,18 @@
 .introduction {
-    box-sizing: border-box;
-    clear: both;
-    color: rgba(255, 255, 255, 0.9);
-    display: block;
-    font-family: 'Courier New', Courier, monospace;
-    height: 600px;
-    font-size: 14px;
-    line-height: 20px;
     position: relative;
+    clear: both;
+    display: block;
     text-align: center;
 }
+
+.title {
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    display: block;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 80px;
+    line-height: 90px;
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.2);
+}
+
