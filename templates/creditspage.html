@@ -1,56 +1,73 @@
 {% extends "layout.html" %}
 {% block content%}
 
-    <div class="ui container">
-        <!--Header-->
-        <h1 class="ui header">Credits</h1>
+<div class="ui container">
+    <div class="ui stretched one column grid" style="padding: 2.5em">
+        <h1 class="ui huge header">Credits</h1>
+        <div class="row">
+            <div class="column">
+                <!--Summary-->
+                <div class="ui raised segments" style="padding: 1em">
+                    <div class="ui segment">
+                        <h2 class="ui header">Team Members</h2>
 
-        <!--Summary-->
-        <div class="ui container segment">
+                        <h3 class="ui dividing header">Bradley Pahati: 500829758</h3>
+                        <p>Responsibilities: Webpage Development, Semantic UI Research and Implementation, CSS
+                            Styling</p>
 
-            <h2 class="ui header">Team Members</h2>
-            <div class="ui bulleted list">
-                <div class="item">
-                    <div class="content">
-                        <div class="header">Bradley Pahati: 500829758</div>
-                        <p>Responsibilities: Webpage Development, Semantic UI Research and Implementation, CSS Styling</p>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="content">
-                        <div class="header">Muhammad Siddiqui: 500837501</div>
-                        <p>Responsibilities: Front-end Development with SemanticUI, Back-end Development with Flask, Hosting on Heroku, Writing of Webpage Content</p>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="content">
-                        <div class="header">Lauren Gomes: 500824231</div>
-                        <p> Responsibilities: Webpage Development, Semantic UI Implementation, Research and Writing of Webpage Content</p>
+                        <h3 class="ui dividing header">Muhammad Siddiqui: 500837501</h3>
+                        <p>Responsibilities: Front-end Development with SemanticUI, Back-end Development with
+                            Flask,
+                            Hosting on Heroku, Writing of Webpage Content</p>
+
+                        <h3 class="ui dividing header">Lauren Gomes: 500824231</h3>
+                        <p> Responsibilities: Webpage Development, Semantic UI Implementation, Research and
+                            Writing of
+                            Webpage Content</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="ui container segment">
-                <h2 class="ui header">References</h2>
-                <div>
-                    <h3 class="ui header">Image Sources</h3>
-                    <p>
-                    <a class="item" href="https://res.cloudinary.com/simpleview/image/upload/c_fit,w_1000,h_1000/crm/toronto/Summer-2015-Skyline0_5e954389-5056-a36f-234589b46e9b25ae.jpg">CN Tower Image</a><br/>
-                    <a class="item" href="https://pbs.twimg.com/media/DQecaREVwAAewMe.jpg">Ontario Place Image</a><br/>
-                    <a class="item" href="https://cdn-cloudfront.cfauthx.com/binaries/content/gallery/cw-en-ca/blogs/last-blast-banner.png">Canada's Wonderland Image</a><br/>
-                    <a class="item" href="https://tce-live2.s3.amazonaws.com/media/media/6086645c-c9df-4fb9-9bee-a042fd87d75c.jpg">ROM Image</a><br/>
-                    <a class="item" href="http://urbantoronto.ca/sites/default/files/imagecache/display-slideshow/images/articles/2015/10/17734/17734-59272.png">AGO Image</a><br/>
-                    <a class="item" href="https://s3.amazonaws.com/btoimage/prism-thumbnails/articles/2017411-kensingtonflea.jpg-resize_then_crop-_frame_bg_color_FFF-h_1365-gravity_center-q_70-preserve_ratio_true-w_2048_.webp">Kensington Market Image</a>
-                    </p>
-                    <h3 class="ui header">Framework Research </h3>
-                    <p>
-                    <a class="item" href="https://www.codingdojo.com/blog/choosing-python-web-frameworks/">Flask Pros and Cons</a><br/>
-                    <a class="item" href="http://flask.pocoo.org/community/poweredby/"> Developers and Websites using Flask</a><br/>
-                    <a class="item" href="https://hostpresto.com/blog/framework-smackdown-bootstrap-vs-semantic-ui/"> Semantic UI Pros and Cons</a><br/>
-                    <a class="item" href="https://stackshare.io/semantic-ui "> Developers and Websites using Semantic UI</a><br/>
-                    </p>
+        <div class="row">
+            <div class="column">
+                <div class="ui raised segments" style="padding: 1em">
+                    <div class="ui segment">
+                        <h2 class="ui header">References</h2>
+                        <div>
+                            <h3 class="ui header">Image Sources</h3>
+                            <p>
+                                <a class="item" href="https://res.cloudinary.com/simpleview/image/upload/c_fit,w_1000,h_1000/crm/toronto/Summer-2015-Skyline0_5e954389-5056-a36f-234589b46e9b25ae.jpg">CN
+                                    Tower Image</a><br />
+                                <a class="item" href="https://pbs.twimg.com/media/DQecaREVwAAewMe.jpg">Ontario Place
+                                    Image</a><br />
+                                <a class="item" href="https://cdn-cloudfront.cfauthx.com/binaries/content/gallery/cw-en-ca/blogs/last-blast-banner.png">Canada's
+                                    Wonderland Image</a><br />
+                                <a class="item" href="https://tce-live2.s3.amazonaws.com/media/media/6086645c-c9df-4fb9-9bee-a042fd87d75c.jpg">ROM
+                                    Image</a><br />
+                                <a class="item" href="http://urbantoronto.ca/sites/default/files/imagecache/display-slideshow/images/articles/2015/10/17734/17734-59272.png">AGO
+                                    Image</a><br />
+                                <a class="item" href="https://s3.amazonaws.com/btoimage/prism-thumbnails/articles/2017411-kensingtonflea.jpg-resize_then_crop-_frame_bg_color_FFF-h_1365-gravity_center-q_70-preserve_ratio_true-w_2048_.webp">Kensington
+                                    Market Image</a>
+                            </p>
+                            <h3 class="ui header">Framework Research </h3>
+                            <p>
+                                <a class="item" href="https://www.codingdojo.com/blog/choosing-python-web-frameworks/">Flask
+                                    Pros and
+                                    Cons</a><br />
+                                <a class="item" href="http://flask.pocoo.org/community/poweredby/"> Developers and
+                                    Websites
+                                    using Flask</a><br />
+                                <a class="item" href="https://hostpresto.com/blog/framework-smackdown-bootstrap-vs-semantic-ui/">
+                                    Semantic UI Pros and Cons</a><br />
+                                <a class="item" href="https://stackshare.io/semantic-ui "> Developers and Websites
+                                    using
+                                    Semantic UI</a><br />
+                            </p>
+                        </div>
+                    </div>
                 </div>
+            </div>
         </div>
-
     </div>
+</div>
 {% endblock content %}
