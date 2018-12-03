@@ -1,0 +1,12 @@
+.introduction {
+    box-sizing: border-box;
+    clear: both;
+    color: rgba(255, 255, 255, 0.9);
+    display: block;
+    font-family: 'Courier New', Courier, monospace;
+    height: 600px;
+    font-size: 14px;
+    line-height: 20px;
+    position: relative;
+    text-align: center;
+}
