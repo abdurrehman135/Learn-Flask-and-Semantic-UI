@@ -1,4 +1,4 @@
-from flask import Flask, render_template, url_for
+from flask import Flask, render_template, url_for, request
 app = Flask(__name__)
 
 #PAGE 1: HOMEPAGE - SUMMARY
@@ -8,12 +8,15 @@ def home():
     return render_template('home.html')
 
 #PAGE 2: INSTALL FRAMEWORKS
-@app.route("/install")
-def about():
+@app.route("/install")#, methods=['GET', 'POST'])
+def install():
+	#if request.method == 'POST'
     return render_template('install.html', title='Installing Frameworks')
 
-#PAGE 3 NEEDED!
-
+#PAGE 3 TUTORIAL
+@app.route("/tutorial")
+def tutorial():
+    return render_template('tutorial.html', title='Tutorial')
 
 #PAGE 4: DEMO PAGE - TORONTO
 @app.route("/demo")
