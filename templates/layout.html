@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    {% if title %}
+    <title>CPS530 Project - {{ title }}</title>
+    {% else %}
+    <title>CPS530 Project</title>
+    {% endif %}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ url_for('static', filename='semantic/dist/semantic.css') }}" />
+    <script src="{{ url_for('static', filename='semantic/dist/semantic.js') }}"></script>
+</head>
+
+<body>
+    <!--Menu bar-->
+    <div class="ui inverted segment">
+        <div class="ui inverted secondary menu">
+            <a class="{% if active=='home' %}active{% endif %} item" href="{{ url_for('home') }}">
+                <i class="home icon"></i> Home
+            </a>
+            <a class="{% if active=='install' %}active{% endif %}item" href="{{ url_for('install') }}">
+                <i class="download icon"></i> Install Frameworks
+            </a>
+            <a class="{% if active=='tutorial' %}active{% endif %}item" href="{{ url_for('tutorial') }}">
+                <i class="terminal icon"></i> Tutorial
+            </a>
+            <a class="{% if active=='demo' %}active{% endif %}item" href="{{ url_for('demo') }}">
+                <i class="pencil alternate icon"></i> Demo
+            </a>
+            <a class="{% if active=='conclusion' %}active{% endif %}item" href="{{ url_for('conclusion') }}">
+                <i class="thumbs up outline icon"></i> Conclusion
+            </a>
+            <a class="{% if active=='credits' %}active{% endif %}item" href="{{ url_for('credits') }}">
+                <i class="user outline icon"></i> Credits
+            </a>
+        </div>
+    </div>
+
+
+    {% block content%}{% endblock%}
+
+
+
+</body>
+
+</html>

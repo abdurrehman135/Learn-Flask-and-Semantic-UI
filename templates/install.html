@@ -1,16 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-	{% if title %}
-    <title>CPS530 Project - {{ title }}</title>
-    {% else %}
-    <title>CPS530 Project</title>
-    {% endif %}
-</head>
-<body>
+{% extends "layout.html" %}
+{% block content%}
 	<h1>Installation of frameworks tutorial</h1>
 	<h2>SemanticUI</h2>
 	<h2>Flask</h2>
 	<h1>Deploying on Heroku</h1>
-</body>
-</html>
+{% endblock content %}

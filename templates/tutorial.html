@@ -1,39 +1,5 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>CPS530 Project</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" media="screen" href="semantic/dist/semantic.css" />
-        <script src="semantic/dist/semantic.js"></script>
-</head>
-
-<body>
-    <!--Menu-->
-    <div class="ui top attached menu">
-        <div class="ui container">
-            <a class="item">
-                <i class="home icon"></i> Home
-            </a>
-            <a class="item">
-                <i class="download icon"></i> Install
-            </a>
-            <a class="item">
-                <i class="mail icon"></i> Tutorial
-            </a>
-            <a class="item">
-                <i class=""></i> Toronto
-            </a>
-            <a class="item">
-                <i class=""></i> Conclusion
-            </a>
-            <a class="item">
-                <i class=""></i> Credits
-            </a>
-        </div>
-    </div>
+{% extends "layout.html" %}
+{% block content%}
     <div class="ui container">
         <!--Title-->
         <h1 class="ui header">Tutorial</h1>
@@ -85,6 +51,4 @@
             
         </div>
     </div>
-</body>
-
-</html>
+{% endblock content %}

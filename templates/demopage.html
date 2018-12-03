@@ -1,44 +1,8 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>CPS530 Project</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="semantic/dist/semantic.css" />
-    <script src="semantic/dist/semantic.js"></script>
-</head>
-
-<body>
+{% extends "layout.html" %}
+{% block content%}
     <div class="ui container">
         <!--Header-->
         <h1 class="ui header">Five of Toronto's Best Attractions</h1>
-
-        <!--Menu-->
-        <div class="ui attached stackable menu">
-            <div class="ui container">
-                <a class="item">
-                    <i class="home icon"></i> Home
-                </a>
-                <a class="item">
-                    <i class="grid layout icon"></i> Browse
-                </a>
-                <a class="item">
-                    <i class="mail icon"></i> Messages
-                </a>
-            </div>
-            <div class="ui simple dropdown item">
-                More
-                <i class="dropdown icon"></i>
-                <div class="menu">
-                    <a class="item"><i class="edit icon"></i>Edit Profile</a>
-                    <a class="item"><i class="globe icon"></i>Choose Language</a>
-                    <a class="item"><i class="settings icon"></i>Account Settings</a>
-                </div>
-            </div>
-        </div>
-
         <!--Summary-->
         <div class="ui container segment">
 
@@ -103,4 +67,4 @@
 
 
     </div>
-</body>
+{% endblock content %}
