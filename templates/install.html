@@ -1,129 +1,118 @@
 {% extends "layout.html" %}
 {% block content%}
 <!--BODY CONTENTS-->
-<div class="ui stretched one column grid" style="padding: 2.5em">
-    <h1 class="ui huge header">Installing Frameworks</h1>
-    <div class="row">
-        <!--Flask-->
-        <div class="column">
-            <div class="ui raised segments" style="padding: 1em">
+<div class="ui container">
+    <div class="ui stretched one column grid" style="padding: 2.5em">
+        <h1 class="ui huge header">Installing Frameworks</h1>
+        <div class="row">
+            <!--Flask-->
+            <div class="column">
+                <div class="ui raised segments" style="padding: 1em">
+                    <div class="segment">
+                        <h2 class="ui large header">Flask</h2>
+                        <p>You can refer to the documentation at the official site for Flask: <a href="http://flask.pocoo.org/docs/1.0/installation/">http://flask.pocoo.org/docs/1.0/installation/</a></p>
 
-                <div class="segment">
-                    <h2 class="ui large header">Flask</h2>
-                    <p>You can refer to the documentation at the official site for Flask: <a href="http://flask.pocoo.org/docs/1.0/installation/">http://flask.pocoo.org/docs/1.0/installation/</a></p>
+                        <h3 class="ui dividing header">Install Python</h3>
+                        <p>First, you need to install Python from here (Latest version of Python 3 is recommended): <a
+                                href="https://www.python.org/downloads/">https://www.python.org/downloads/</a></p>
 
-                    <h3 class="ui dividing header">Download Python</h3>
-                    <p>First, You need to install Python from here (Latest version of Python 3 is recommended): <a href="https://www.python.org/downloads/">
-                            https://www.python.org/downloads/</a></p>
-
-                    <h3 class="ui dividing header">Now you can really install Flask</h3>
-                    <p>Once Python is installed, open your terminal. If you use Windows, command prompt is garbage, so
-                        use Git Bash instead since it is closer to a Unix like terminal</p>
-                    <p>Install Flask:</p>
-                    <pre><code>pip install flask</code></pre>
-                    <p>Install gunicorn:</p>
-                    <pre><code>pip install gunicorn</code></pre>
-
-                    <p>Congrats! You now have Flask installed. If you want to see how to make a simple Flask app, see
-                        the <a href="{{ url_for('tutorial') }}">Tutorial</a> page.</p>
-
+                        <h3 class="ui dividing header">Install Flask</h3>
+                        <p>Once Python is installed, open your terminal.</p>
+                        <p>Install Flask:</p>
+                        <pre><code>pip install flask</code></pre>
+                        <p>Install gunicorn:</p>
+                        <pre><code>pip install gunicorn</code></pre>
+                        <p>Congrats! You now have Flask installed. If you want to see how to make a simple Flask app,
+                            see the <a href="{{ url_for('tutorial') }}">Tutorial</a> page.</p>
+                    </div>
                 </div>
-
-
             </div>
-        </div>
-        <!--Semantic-->
-        <div class="ui raised segments" style="padding: 1em">
-            <div class="segment">
-                <h2 class="ui large header">Semantic UI</h2>
-                <p>You can refer to the documentation at the official site for Semantic UI: <a href="https://semantic-ui.com/">https://semantic-ui.com/</a></p>
+            <!--Semantic-->
+            <div class="column">
+                <div class="ui raised segments" style="padding: 1em">
+                    <div class="segment">
+                        <h2 class="ui large header">Semantic UI</h2>
+                        <p>You can refer to the documentation at the official site for Semantic UI: <a href="https://semantic-ui.com/">https://semantic-ui.com/</a></p>
 
-                <h3 class="ui dividing header">Download Python</h3>
-                <p>First, You need to install Python from here (Latest version of Python 3 is recommended): <a href="https://www.python.org/downloads/">
-                        https://www.python.org/downloads/</a></p>
+                        <p><i>Note: Make sure all commands are run inside the project folder.</i></p>
+                        <h3 class="ui dividing header">Install NodeJS</h3>
+                        <p>First, you need to install NodeJS from here: <a href="https://nodejs.org/en/">https://nodejs.org/en/</a></p>
 
-                <h3 class="ui dividing header">Now you can really install Flask</h3>
-                <p>Once Python is installed, open your terminal. If you use Windows, command prompt is garbage, so
-                    use Git Bash instead since it is closer to a Unix like terminal</p>
-                <p>Install Flask:</p>
-                <pre><code>pip install flask</code></pre>
-                <p>Install gunicorn:</p>
-                <pre><code>pip install gunicorn</code></pre>
+                        <h3 class="ui dividing header">Install Gulp</h3>
+                        <p>Once NodeJS is installed, install gulp by running this command in the terminal:</p>
+                        <pre><code>npm install -g gulp</code></pre>
 
-                <p>Congrats! You now have Flask installed. If you want to see how to make a simple Flask app, see
-                    the <a href="{{ url_for('tutorial') }}">Tutorial</a> page.</p>
-
-            </div>
-        </div>
-
-
-        <!--Heroku-->
-        <div class="column">
-            <div class="ui raised segments" style="padding: 1em">
-
-                <div class="segment">
-                    <h2 class="ui large header">Heroku</h2>
-                    <p>Once you made your finished website, you can deploy it to Heroku</p>
-                    <h3 class="ui dividing header">Make an account on Heroku</h3>
-                    <p>First, you need to make an account on Heroku: <a href="https://signup.heroku.com/">https://signup.heroku.com/</a></p>
-
-                    <h3 class="ui dividing header">Create a list of your Python dependencies</h3>
-                    <p>You will need this for Heroku to know what packages your app has installed. In your
-                        terminal,
-                        after navigating to your Project's lcoation, run the command below</p>
-                    <pre><code>pip freeze > requirements.txt</code></pre>
-
-                    <h3 class="ui dividing header">Make a "Procfile"</h3>
-                    <p>This basically tells what processes to run on the application. In our case, we use gunicorn,
-                        so
-                        we do the following in the terminal...</p>
-                    <pre><code>vi Procfile</code></pre>
-                    <p>This will open vim, press i to begin typing the following into the file</p>
-                    <pre><code>web:gunicorn filename:app</code></pre>
-                    <p>NOTE: filename should instead be the name of your flask application (without the .py
-                        extension)</p>
-                    <p>Now exit vim by hitting the escape key, and pressing WQ</p>
-
-                    <h3 class="ui dividing header">Make an application on Heroku</h3>
-                    <p>Go to Heroku and create a new app</p>
-                    <p>Give a unique app name and follow the remaining instructions</p>
-
-                    <h3 class="ui dividing header">Install the Heroku CLI</h3>
-                    <p>This will be needed to continue in the terminal</p>
-
-                    <h3 class="ui dividing header">Run Heroku create</h3>
-                    <p>log into heroku from your terminal like so:</p>
-                    <pre><code>heroku login</code></pre>
-                    <p>You will be prompted to log in from your default browser. Then run the following command:</p>
-                    <pre><code>heroku create</code></pre>
-
-                    <h3 class="ui dividing header">Setup Heroku</h3>
-                    <p>This is needed to be able to "push" your code on to heroku's servers</p>
-                    <pre><code>git init</code></pre>
-                    <pre><code>heroku git:remote -a NAMEOFYOURHEROKUAPP</code></pre>
-                    <p>NOTE: replace the all caps part of the command with the name you gave your heroku app</p>
-
-                    <p>Confirm that Heroku's servers are added with this command:</p>
-                    <pre><code>git remote -v</code></pre>
-
-                    <h3 class="ui dividing header">Final Step! Push your code onto Heroku</h3>
-                    <p>Run the following commands to push your code to heroku's servers and your website should now
-                        be
-                        online!</p>
-                    <pre><code>git add .</code></pre>
-                    <pre><code>git commit -m "initial commit"</code></pre>
-                    <p>To confirm, see if heroku is available as an option with the command below:</p>
-                    <pre><code>git status</code></pre>
-                    <pre><code>git push heroku master</code></pre>
-                    <p>CONGRATS! Your website should now be online with Heroku. After the results are done loading
-                        on
-                        your terminal screen, heroku should give you a link to view your website</p>
+                        <h3 class="ui dividing header">Install Semantic UI</h3>
+                        <p>Finally, install Semantic UI by running these commands in the terminal:</p>
+                        <pre><code>npm install semantic-ui --save</code></pre>
+                        <pre><code>cd semantic/</code></pre>
+                        <pre><code>gulp build</code></pre>
+                    </div>
                 </div>
-
-
             </div>
+            <!--Heroku-->
+            <div class="column">
+                <div class="ui raised segments" style="padding: 1em">
+                    <div class="segment">
+                        <h2 class="ui large header">Heroku</h2>
+                        <p>Once you made your finished website, you can deploy it to Heroku</p>
+                        <h3 class="ui dividing header">Make an account on Heroku</h3>
+                        <p>First, you need to make an account on Heroku: <a href="https://signup.heroku.com/">https://signup.heroku.com/</a></p>
 
+                        <h3 class="ui dividing header">Create a list of your Python dependencies</h3>
+                        <p>You will need this for Heroku to know what packages your app has installed. In your
+                            terminal,
+                            after navigating to your Project's lcoation, run the command below</p>
+                        <pre><code>pip freeze > requirements.txt</code></pre>
 
+                        <h3 class="ui dividing header">Make a "Procfile"</h3>
+                        <p>This basically tells what processes to run on the application. In our case, we use gunicorn,
+                            so
+                            we do the following in the terminal...</p>
+                        <pre><code>vi Procfile</code></pre>
+                        <p>This will open vim, press i to begin typing the following into the file</p>
+                        <pre><code>web:gunicorn filename:app</code></pre>
+                        <p>NOTE: filename should instead be the name of your flask application (without the .py
+                            extension)</p>
+                        <p>Now exit vim by hitting the escape key, and pressing WQ</p>
+
+                        <h3 class="ui dividing header">Make an application on Heroku</h3>
+                        <p>Go to Heroku and create a new app</p>
+                        <p>Give a unique app name and follow the remaining instructions</p>
+
+                        <h3 class="ui dividing header">Install the Heroku CLI</h3>
+                        <p>This will be needed to continue in the terminal</p>
+
+                        <h3 class="ui dividing header">Run Heroku create</h3>
+                        <p>log into heroku from your terminal like so:</p>
+                        <pre><code>heroku login</code></pre>
+                        <p>You will be prompted to log in from your default browser. Then run the following command:</p>
+                        <pre><code>heroku create</code></pre>
+
+                        <h3 class="ui dividing header">Setup Heroku</h3>
+                        <p>This is needed to be able to "push" your code on to heroku's servers</p>
+                        <pre><code>git init</code></pre>
+                        <pre><code>heroku git:remote -a NAMEOFYOURHEROKUAPP</code></pre>
+                        <p>NOTE: replace the all caps part of the command with the name you gave your heroku app</p>
+
+                        <p>Confirm that Heroku's servers are added with this command:</p>
+                        <pre><code>git remote -v</code></pre>
+
+                        <h3 class="ui dividing header">Final Step! Push your code onto Heroku</h3>
+                        <p>Run the following commands to push your code to heroku's servers and your website should now
+                            be
+                            online!</p>
+                        <pre><code>git add .</code></pre>
+                        <pre><code>git commit -m "initial commit"</code></pre>
+                        <p>To confirm, see if heroku is available as an option with the command below:</p>
+                        <pre><code>git status</code></pre>
+                        <pre><code>git push heroku master</code></pre>
+                        <p>CONGRATS! Your website should now be online with Heroku. After the results are done loading
+                            on
+                            your terminal screen, heroku should give you a link to view your website</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     {% endblock content %}
