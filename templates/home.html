@@ -1,188 +1,199 @@
 {% extends "layout.html" %}
 {% block content%}
 <!--BODY CONTENTS-->
-<div class="ui stretched two column grid" style="padding: 2.5em">
-    <h1 class="ui huge header">Overview: Semantic UI and Flask</h1>
-    <div class="row">
-        <!--Semantic UI-->
-        <div class="column">
-            <div class="ui raised segments" style="padding: 1em">
+<div class="ui container">
+    <div class="ui stretched column grid" style="padding: 2.5em">
+        <h1 class="ui huge header">Overview: Semantic UI and Flask</h1>
+        <div class="row">
+            <!--Semantic UI-->
+            <div class="column">
+                <div class="ui raised segments" style="padding: 1em">
 
-                <div class="segment">
-                    <h2 class="ui large header">Semantic UI</h2>
-                    <p>Semantic is a development framework that helps create beautiful, responsive layouts using
-                        human-friendly HTML</p>
-                
-                <h3 class="ui dividing header">Popularity</h3>
-                <p>Semantic UI is not as popular as Bootstrap, and has a larger learning curve.</p>
+                    <div class="ui segment">
+                        <h2 class="ui large header">Semantic UI</h2>
+                        <p>Semantic is a development framework that helps create beautiful, responsive layouts using
+                            human-friendly HTML</p>
 
-                <h3 class="ui dividing header">Strengths</h3>
-                <div class="ui bulleted list">
-                    <div class="item">
-                        <div class="content">
-                            <div class="header">Load only the components you need</div>
-                            <p>Semantic UI package is well organized, with every component stored into it's own
-                                stylesheet
-                                and JavaScript file.
-                                This makes it easy to load only certain packages which decreases both file size and
-                                access
-                                time</p>
+                        <h3 class="ui dividing header">Popularity</h3>
+                        <p>Semantic UI is not as popular as Bootstrap, and has a larger learning curve.</p>
+
+                        <h3 class="ui dividing header">Strengths</h3>
+                        <div class="ui bulleted list">
+                            <div class="item">
+                                <div class="content">
+                                    <div class="header">Load only the components you need</div>
+                                    <p>Semantic UI package is well organized, with every component stored into it's own
+                                        stylesheet
+                                        and JavaScript file.
+                                        This makes it easy to load only certain packages which decreases both file size
+                                        and
+                                        access
+                                        time</p>
+                                </div>
+                            </div>
+                            <div class="item">The elements offer a huge amount of customization compared to other
+                                frameworks
+                                such
+                                as Bootstrap</div>
+                            <div class="item">
+                                <div class="content">
+                                    <div class="header">Its semantic</div>
+                                    <p>It uses a semantic naming scheme for the styling, which makes it easy to
+                                        understand
+                                        for
+                                        beginners</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="content">
+                                    <div class="header">Beautifully designed</div>
+                                    <p>Semantic UI has a futuristic and beautiful design that many people will find
+                                        appealing.</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="content">
+                                    <div class="header">It has many UI components</div>
+                                    <p>It has many UI components that can suit many different types of projects.</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="content">
+                                    <div class="header">Good documentation</div>
+                                    <p>The documentation is well written and very easy to use due to the many examples
+                                        provided
+                                        in
+                                        the source code.</p>
+                                </div>
+                            </div>
                         </div>
+                        <h3 class="ui dividing header">Weaknesses</h3>
+                        <div class="ui bulleted list">
+                            <div class="item">
+                                <div class="header">Very large file size</div>
+                                <p>The packages provided by Semantic UI are much larger in comparison to Boostrap.
+                                    Using
+                                    specific
+                                    components is recommended rather than
+                                    using all the components.</p>
+                            </div>
+                            <div class="item">
+                                <div class="content">
+                                    <div class="header">Buggy</div>
+                                    <p>There are many UI intricacies such as incorrect position and unable to mix
+                                        classes.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3 class="ui dividing header">Types of Developers</h3>
+                        <div class="ui bulleted list" style="padding-bottom: 1em">
+                            <p>Developers who want a full-fledged, tightly-coupled framework, are willing to do some
+                                more
+                                learning,
+                                and who do not like using bootstrap.</p>
+                        </div>
+                        <h3 class="ui dividing header">Types of Websites</h3>
+                        <div class="ui bulleted list" style="padding-bottom: 2em">
+                            <div class="item">
+                                <div class="content">
+                                    <a href="https://www.snapchat.com/">SnapChat</a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="content">
+                                    <a href="https://reviewable.io/">Reviewable.io</a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="content">
+                                    <a href="https://stackshare.io/semantic-ui">Here is a list of popular companies
+                                        using
+                                        SemanticUI </a>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
-                    <div class="item">The elements offer a huge amount of customization compared to other
-                        frameworks
-                        such
-                        as Bootstrap</div>
-                    <div class="item">
-                        <div class="content">
-                            <div class="header">Its semantic</div>
-                            <p>It uses a semantic naming scheme for the styling, which makes it easy to understand
-                                for
-                                beginners</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!--Flask-->
+            <div class="column">
+                <div class="ui raised segments" style="padding: 1em">
+                    <div class="ui segment">
+                        <h2 class="ui large header">Flask</h2>
+                        <p>Flask is a micro framework. The aim of the framework is to keep the core simple but
+                            extensible.
+                            Flask is
+                            easy to learn quickly, and is also easy to tweak to the developers needs.</p>
+
+                        <h3 class="ui dividing header">Popularity</h3>
+                        <p>Flask is very popular currently, even more so than Django which is another python framework.</p>
+
+                        <h3 class="ui dividing header">Strengths</h3>
+                        <div class="ui bulleted list">
+                            <div class="item">
+                                <div class="content">
+                                    <div class="header">Extremely flexible</div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="content">
+                                    <div class="header">Minimalist without sacrificing power</div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="content">
+                                    <div class="header">Simple to learn and use</div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="content">
+                                    <div class="header">Routing URLs is easy</div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="content">
+                                    <div class="header">The Core of the framework is small and easily extensible.</div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <div class="content">
-                            <div class="header">Beautifully designed</div>
-                            <p>Semantic UI has a futuristic and beautiful design that many people will find
-                                appealing.</p>
+
+                        <h3 class="ui dividing header">Weaknesses</h3>
+                        <div class="ui bulleted list">
+                            <div class="item">
+                                <div class="header">Not Async friendly</div>
+                            </div>
+                            <div class="item">
+                                <div class="header">Limited support and documentation</div>
+                            </div>
+                            <div class="item">
+                                <div class="header">Lack of database and forms</div>
+                            </div>
+                            <div class="item">
+                                <div class="header">Truely limited in features</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <div class="content">
-                            <div class="header">It has many UI components</div>
-                            <p>It has many UI components that can suit many different types of projects.</p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content">
-                            <div class="header">Good documentation</div>
-                            <p>The documentation is well written and very easy to use due to the many examples
-                                provided
-                                in
-                                the source code.</p>
-                        </div>
-                        </div>
-                    </div>
-                    <h3 class="ui dividing header">Weaknesses</h3>
-                    <div class="ui bulleted list">
-                        <div class="item">
-                            <div class="header">Very large file size</div>
-                            <p>The packages provided by Semantic UI are much larger in comparison to Boostrap. Using
-                                specific
-                                components is recommended rather than
-                                using all the components.</p>
-                        </div>
+
+                        <h3 class="ui dividing header">Types of Developers</h3>
+                        <p>Flask is often used in smaller projects that have opted to use python. Flask is also useful
+                            for
+                            small projects due to being lightweight and easy to deploy</p>
+
+                        <h3 class="ui dividing header">Types of Websites</h3>
                         <div class="item">
                             <div class="content">
-                                <div class="header">Buggy</div>
-                                <p>There are many UI intricacies such as incorrect position and unable to mix classes.</p>
+                                <a href="http://flask.pocoo.org/community/poweredby/">Here are some websites using
+                                    Flask</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                
-
-            </div>
-        </div>
-        <!--Flask-->
-        <div class="column">
-            <div class="ui raised segments" style="padding: 1em">
-                <h2 class="ui large header">Flask</h2>
-                <p>Flask is a micro framework. The aim of the framework is to keep the core simple but extensible.
-                    Flask is
-                    easy to learn quickly, and is also easy to tweak to the developers needs.</p>
-
-                <h3 class="ui dividing header">Popularity</h3>
-                <p>Flask is very popular currently, even more so than Django which is another python framework.</p>
-
-                <h3 class="ui dividing header">Strengths</h3>
-                <div class="ui bulleted list">
-                    <div class="item">
-                        <div class="content">
-                            <div class="header">Extremely flexible</div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content">
-                            <div class="header">Minimalist without sacrificing power</div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content">
-                            <div class="header">Simple to learn and use</div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content">
-                            <div class="header">Routing URLs is easy</div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content">
-                            <div class="header">The Core of the framework is small and easily extensible.</div>
-                        </div>
-                    </div>
-                </div>
-
-                <h3 class="ui dividing header">Weaknesses</h3>
-                <div class="ui bulleted list">
-                    <div class="item">
-                        <div class="header">Not Async friendly</div>
-                    </div>
-                    <div class="item">
-                        <div class="header">Limited support and documentation</div>
-                    </div>
-                    <div class="item">
-                        <div class="header">Lack of database and forms</div>
-                    </div>
-                    <div class="item">
-                        <div class="header">Truely limited in features</div>
-                    </div>
-                </div>
-
-                <h3 class="ui dividing header">Types of Developers</h3>
-                <p>Flask is often used in smaller projects that have opted to use python. Flask is also useful for small projects due to being lightweight and easy to deploy</p>
-
-                <h3 class="ui dividing header">Types of Websites</h3>
-                <div class="item"> 
-                <div class="content">
-                    <a href="http://flask.pocoo.org/community/poweredby/">Here are some websites using Flask</a>
-                </div>
-                </div>
             </div>
         </div>
     </div>
-</div>
-
-<!--Extra SemanticUI Info-->
-<div class="row" style="padding: 2.5em">
-
-
-    <h2 class="ui dividing header">Developers that use Semantic UI</h2>
-    <div class="ui bulleted list" style="padding-bottom: 1em">
-        <p>Developers who want a full-fledged, tightly-coupled framework, are willing to do some more
-            learning,
-            and who do not like using bootstrap.</p>
-    </div>
-    <h2 class="ui dividing header">Websites that use Semantic UI</h2>
-    <div class="ui bulleted list" style="padding-bottom: 2em">
-        <div class="item">
-            <div class="content">                
-                <a href="https://www.snapchat.com/">SnapChat</a>
-            </div>
-        </div>
-        <div class="item">
-            <div class="content">
-                <a href="https://reviewable.io/">Reviewable.io</a>
-            </div>
-        </div>
-        <div class="item"> 
-            <div class="content">
-                <a href="https://stackshare.io/semantic-ui">Here is a list of popular companies using SemanticUI </a>
-            </div>
-        </div>
-    </div>
-
 </div>
 {% endblock content %}
