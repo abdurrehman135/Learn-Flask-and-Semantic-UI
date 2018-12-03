@@ -31,7 +31,7 @@ def conclusion():
 #PAGE 6: CREDITS
 @app.route("/credits")
 def credits():
-    return render_template('CreditsPage.html', title='Credits', active='credits')
+    return render_template('creditspage.html', title='Credits', active='credits')
 
 if __name__ == "__main__":
     app.run(debug=True)
