@@ -1,15 +1,10 @@
 {% extends "layout.html" %}
 {% block content%}
-    <div class="ui container">
-        <!--Title-->
-        <h1 class="ui header">Tutorial</h1>
-    </div>
-
     <div class="ui grid container">
         <div class="row">
             
-            <div class="twenty wide column">
-                <h2 class="ui block header">Creating a Webpage</h2>
+            <div class="twenty wide column"style="padding: 2.5em">
+                <h2 class="ui header">Creating a Webpage with SemanticUI</h2>
                 <p>Now that we know the strengths and weaknesses of Semantic UI and Flask, let's create an 
                     effective webpage using them.
                 </p>
@@ -47,6 +42,26 @@
                 </p>
                 <!--Need an image of the final demo page here-->
                 <img class="ui centered image" src="">
+
+                <h2 class="ui header">Create a simple Flask App</h2>
+                <h3 class="ui dividing header">Make a Flask app</h3>
+                <p>Following the installation of Flask, create a file for running your website with a .py extension</p>
+                <p>Using your favourite editor, enter the following lines of code for your Flask app:</p>
+                <pre><code>from flask import Flask, render_template</code></pre>
+                <pre><code>app = Flask (__name__)</code></pre>
+                <pre><code>@app.route('/')</code></pre>
+                <pre><code>def index():</code></pre>
+                <pre><code>     return render_template('index.html')</code></pre>
+                <pre><code>if __name__ == "__maine__":</code></pre>
+                <pre><code>     app.run(debug=True)</code></pre>
+                <p>NOTE: index.html should instead be the name of your html page that you want Flask to run! (with the .html extension)</p>
+                <p>NOTE: inside <pre><code>app.run()</code></pre> the parentheses can be empty as above, but we put: <pre><code>debug=True</code></pre> for your convenience in developing - as you make changes and save them, you can simply refresh the page (localhost:5000) to view changes!</p>
+
+                <h3 class="ui dividing header">Run your Web App on Flask</h3>
+                <p>Now, in your terminal, run the following command, where <pre><code>filename</code></pre> is instead the chosen name of your flask app</p>
+                <pre><code>python filename</code></pre>
+                <p>On your terminal screen, you will be given a link to view your flask app. Copy paste it into your favourite browser, or simply put into your address bar: localhost:5000</p>
+                <p>This will run the flask app locally and you can see changes from your computer</p>
             </div>
             
         </div>
