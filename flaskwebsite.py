@@ -32,4 +32,4 @@ def credits():
     return render_template('creditspage.html', title='Credits', active='credits')
 
 if __name__ == "__main__":
-    app.run(debug=True)		#REMOVE WHEN FINISHED!!
+    app.run()		#debug=True for debug mode
