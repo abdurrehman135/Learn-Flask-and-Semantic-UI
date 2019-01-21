@@ -1,4 +1,4 @@
 # Learn Flask and Semantic UI
-Website using SemanticUI and Flask, hosted on Heroku.
+Website to introduce beginners to web development using Flask and Semantic UI, hosted on Heroku.
 
 Website link: [frameworksdemo.herokuapp.com](https://frameworksdemo.herokuapp.com/)
